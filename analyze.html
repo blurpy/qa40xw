@@ -107,8 +107,8 @@
           </div>
 
           <div class="row pt-1 pb-1">
-            <label for="windowTypeSelect" class="col-form-label col-auto pr-3 mr-1">Window type:&nbsp;</label>
-            <select name="windowTypeSelect" id="windowTypeSelect" class="custom-select col-5">
+            <label for="windowTypeSelect" class="col-form-label col-auto pr-3 mr-1 text-black-50">Window type:&nbsp;</label>
+            <select name="windowTypeSelect" id="windowTypeSelect" class="custom-select col-5" disabled>
               <option value="Rectangle">Rectangle</option>
               <option value="Bartlett">Bartlett</option>
               <option value="Hamming">Hamming</option>
@@ -118,13 +118,13 @@
           </div>
 
           <div class="pt-1 pb-1">
-            <div class="custom-control-inline align-top mr-2">Sample rate:</div>
+            <div class="custom-control-inline align-top mr-2 text-black-50">Sample rate:</div>
             <div class="custom-control custom-radio custom-control-inline">
-              <input class="custom-control-input" type="radio" name="sampleRateChoice" id="sampleRate48" value="48000" data-label="48 kHz" checked>
+              <input class="custom-control-input" type="radio" name="sampleRateChoice" id="sampleRate48" value="48000" data-label="48 kHz" checked disabled>
               <label class="custom-control-label" for="sampleRate48">48 kHz</label>
             </div>
             <div class="custom-control custom-radio custom-control-inline mr-1">
-              <input class="custom-control-input" type="radio" name="sampleRateChoice" id="sampleRate192" value="192000" data-label="192 kHz">
+              <input class="custom-control-input" type="radio" name="sampleRateChoice" id="sampleRate192" value="192000" data-label="192 kHz" disabled>
               <label class="custom-control-label" for="sampleRate192">192 kHz</label>
             </div>
           </div>
@@ -138,7 +138,7 @@
 
           <div class="pt-1 pb-1">
             <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" name="roundFrequenciesCheck" id="roundFrequenciesCheck" checked>
+              <input class="custom-control-input" type="checkbox" name="roundFrequenciesCheck" id="roundFrequenciesCheck" checked disabled>
               <label class="custom-control-label" for="roundFrequenciesCheck">Round frequencies</label>
             </div>
           </div>

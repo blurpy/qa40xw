@@ -103,7 +103,7 @@ function setGenerator2() {
 
 function setWindowType() {
     const windowTypeChoice = document.querySelector('#windowTypeSelect option:checked').value;
-    makeRequest("PUT", "/Settings/Window/" + windowTypeChoice, updateSetWindowType.bind(null, windowTypeChoice));
+    // TODO makeRequest("PUT", "/Settings/Window/" + windowTypeChoice, updateSetWindowType.bind(null, windowTypeChoice));
 }
 
 function updateSetWindowType(windowTypeChoice) {
@@ -112,7 +112,7 @@ function updateSetWindowType(windowTypeChoice) {
 
 function setSampleRate() {
     const sampleRate = document.querySelector('input[name="sampleRateChoice"]:checked');
-    makeRequest("PUT", "/Settings/SampleRate/" + sampleRate.value, updateSetSampleRate.bind(null, sampleRate.dataset.label));
+    // TODO makeRequest("PUT", "/Settings/SampleRate/" + sampleRate.value, updateSetSampleRate.bind(null, sampleRate.dataset.label));
 }
 
 function updateSetSampleRate(sampleRate) {
@@ -122,7 +122,7 @@ function updateSetSampleRate(sampleRate) {
 function setRoundFrequencies() {
     const checked = document.querySelector('input[name="roundFrequenciesCheck"]').checked;
     const enabled = (checked ? "On" : "Off");
-    makeRequest("PUT", "/Settings/RoundFrequencies/" + enabled, function() {});
+    // TODO makeRequest("PUT", "/Settings/RoundFrequencies/" + enabled, function() {});
 }
 
 function updateGenerator1Output() {
