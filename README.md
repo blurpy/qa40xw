@@ -1,11 +1,13 @@
-# QA401 Web
+# QA40x Web
 
-Unofficial web interface for usage with the [QA401H](https://github.com/QuantAsylum/QA401H) REST API for the [QA401 Audio Analyzer](https://quantasylum.com/products/qa401-audio-analyzer). This allows a visual interface on Linux and macOS.
+Unofficial web interface for the [QA402 Audio Analyzer](https://quantasylum.com/collections/frontpage/products/qa402-audio-analyzer) using the REST API of the [QA40x Analyzer](https://github.com/QuantAsylum/QA402).
+
+See [QA401 Web](https://github.com/blurpy/qa401w) for a version for the QA401. QA40x Analyzer and QA40x Web will eventually include support the QA401.
 
 
 ## Features
 
-Please read the manual for the Windows software to understand how to use the QA401. This app along with the QA401H API offers a lot of the functionality of the Windows software, but is not feature complete.
+Please read the manual for the Analyzer software to understand how to use the QA402. This app offers a lot of the functionality of the Windows software, but is not feature complete.
 
 
 ### Analyze mode
@@ -63,10 +65,10 @@ Tip: hide the menu when taking screenshots and then use the keyboard shortcuts.
 
 ## How to use
 
-1. [Download](https://github.com/QuantAsylum/QA401H/releases) and start QA401H v0.998 or newer.
-2. [Download](https://github.com/blurpy/qa401w/releases) the code from this repository and open [analyze.html](analyze.html) in the browser.
+1. [Download](https://github.com/QuantAsylum/QA402/releases) and start QA40x v0.997 or newer.
+2. [Download](https://github.com/blurpy/qa40xw/releases) the code from this repository and open [analyze.html](analyze.html) in the browser.
 
 
 ### Notes
 
-Settings (like buffer size, frequency, ...) are configured on the QA401 device itself. If you use this app in multiple tabs it's recommended to click the "Set" button before starting acquisition to avoid running with the settings from the previous tab instead of the current one.
+Settings (like buffer size, frequency, ...) are configured on the QA402 device itself. If you use this app in multiple tabs it's recommended to click the "Set" button before starting acquisition to avoid running with the settings from the previous tab instead of the current one.
