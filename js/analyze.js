@@ -583,8 +583,8 @@ function refreshAcquisition() {
     makeRequest("GET", "/SnrDb/" + frequency + "/" + measureFrequencyStart + "/" + measureFrequencyStop, refreshSnr);
     makeRequest("GET", "/RmsDbv/" + measureFrequencyStart + "/" + measureFrequencyStop, refreshRms)
     makeRequest("GET", "/PeakDbv/" + measureFrequencyStart + "/" + measureFrequencyStop, refreshPeak)
-    makeRequest("GET", "/Phase/Degrees", refreshPhaseDegrees)
-    makeRequest("GET", "/Phase/Seconds", refreshPhaseSeconds)
+    // TODO makeRequest("GET", "/Phase/Degrees", refreshPhaseDegrees)
+    // TODO makeRequest("GET", "/Phase/Seconds", refreshPhaseSeconds)
 
     const fetchFrequencyData = document.querySelector('input[name="fetchFrequencyCheck"]').checked;
     const fetchTimeData = document.querySelector('input[name="fetchTimeCheck"]').checked;

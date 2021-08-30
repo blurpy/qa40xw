@@ -449,7 +449,7 @@ function refreshAcquisition() {
     makeRequest("GET", "/ThdnDb/" + currentFrequency + "/" + measureFrequencyStart + "/" + (measureFrequencyStop + 10), refreshThdN);
     makeRequest("GET", "/SnrDb/" + currentFrequency + "/" + measureFrequencyStart + "/" + measureFrequencyStop, refreshSnr);
     makeRequest("GET", "/RmsDbv/" + measureFrequencyStart + "/" + (measureFrequencyStop + 10), refreshRms);
-    makeRequest("GET", "/Phase/Degrees", refreshPhaseDegrees);
+    // TODO makeRequest("GET", "/Phase/Degrees", refreshPhaseDegrees);
     updateGenerator1Output();
 }
 
