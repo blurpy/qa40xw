@@ -590,11 +590,11 @@ function refreshAcquisition() {
     const fetchTimeData = document.querySelector('input[name="fetchTimeCheck"]').checked;
 
     if (fetchFrequencyData) {
-        makeRequest("GET", "/Data/Freq", refreshFrequencyChart)
+        makeRequest("GET", "/Data/Frequency/Input", refreshFrequencyChart)
     }
 
     if (fetchTimeData) {
-        makeRequest("GET", "/Data/Time", refreshTimeChart)
+        makeRequest("GET", "/Data/Time/Input", refreshTimeChart)
     }
 }
 
