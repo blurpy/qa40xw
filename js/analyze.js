@@ -69,8 +69,8 @@ function updateSetBufferSize(bufferSizeChoice) {
 }
 
 function setAttenuator() {
-    const attenuatorChoice = document.querySelector('input[name="attenuatorChoice"]:checked');
-    makeRequest("PUT", "/Settings/Input/Max/" + attenuatorChoice.value, updateSetAttenuator.bind(null, attenuatorChoice.dataset.label));
+    const attenuatorChoice = document.querySelector('#attenuatorSelect option:checked');
+    makeRequest("PUT", "/Settings/Input/Max/" + attenuatorChoice.value, updateSetAttenuator.bind(null, attenuatorChoice.label));
 }
 
 function updateSetAttenuator(attenuatorChoice) {
@@ -552,16 +552,14 @@ function refreshPhaseSeconds(httpRequest) {
 }
 
 function refreshFrequencyChart(httpRequest) {
-    const attenuatorChoice = document.querySelector('input[name="attenuatorChoice"]:checked').value;
     const externalGain = Number(document.getElementById("externalGain").value);
-    const attenuation = (attenuatorChoice === "26" ? 20 : 0) + (externalGain * -1);
 
     const response = JSON.parse(httpRequest.responseText);
-    const leftDataPoints = base64ToFrequencyDataPoints(response.Left, response.Dx, attenuation);
-    const rightDataPoints = base64ToFrequencyDataPoints(response.Right, response.Dx, attenuation);
+    const leftDataPoints = base64ToFrequencyDataPoints(response.Left, response.Dx, (externalGain * -1));
+    const rightDataPoints = base64ToFrequencyDataPoints(response.Right, response.Dx, (externalGain * -1));
 
     updateFrequencyChart(leftDataPoints, rightDataPoints);
-    refreshPeakFrequency(leftDataPoints, rightDataPoints)
+    refreshPeakFrequency(leftDataPoints, rightDataPoints);
 }
 
 function refreshTimeChart(httpRequest) {
