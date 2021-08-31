@@ -77,8 +77,8 @@ function updateSetBufferSize(bufferSizeChoice) {
 }
 
 function setAttenuator() {
-    const attenuatorChoice = document.querySelector('input[name="attenuatorChoice"]:checked');
-    makeRequest("PUT", "/Settings/Input/Max/" + attenuatorChoice.value, updateSetAttenuator.bind(null, attenuatorChoice.dataset.label));
+    const attenuatorChoice = document.querySelector('#attenuatorSelect option:checked');
+    makeRequest("PUT", "/Settings/Input/Max/" + attenuatorChoice.value, updateSetAttenuator.bind(null, attenuatorChoice.label));
 }
 
 function updateSetAttenuator(attenuatorChoice) {
