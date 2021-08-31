@@ -9,6 +9,8 @@ See [QA401 Web](https://github.com/blurpy/qa401w) for a version for the QA401. Q
 
 Please read the manual for the Analyzer software to understand how to use the QA402. This app offers a lot of the functionality of the Windows software, but is not feature complete.
 
+**Note:** QA40x does not expose all the APIs that QA401H offers yet, so some features are disabled in the user interface for now.  
+
 
 ### Analyze mode
 

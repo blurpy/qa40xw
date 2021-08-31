@@ -25,9 +25,20 @@ function rmsVoltToVpp(rmsVolt) {
 function selectNextRadioButton(radioButtons) {
     for (let i = 0; i < radioButtons.length; i++) {
         if (radioButtons[i].checked === true) {
-            const nextRadioIndex = (i + 1) % radioButtons.length;
-            radioButtons[nextRadioIndex].checked = true;
+            const nextRadioButton = getNextRadioButton(radioButtons, i);
+            nextRadioButton.checked = true;
             break;
         }
     }
+}
+
+function getNextRadioButton(radioButtons, index) {
+    const nextRadioIndex = (index + 1) % radioButtons.length;
+    const nextRadioButton = radioButtons[nextRadioIndex];
+
+    if (nextRadioButton.disabled === true) {
+        return getNextRadioButton(radioButtons, nextRadioIndex);
+    }
+
+    return nextRadioButton;
 }
