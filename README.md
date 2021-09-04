@@ -67,7 +67,7 @@ Tip: hide the menu when taking screenshots and then use the keyboard shortcuts.
 
 ## How to use
 
-1. [Download](https://github.com/QuantAsylum/QA402/releases) and start QA40x v0.997 or newer.
+1. [Download](https://github.com/QuantAsylum/QA402/releases) and start QA40x v0.999 or newer.
 2. [Download](https://github.com/blurpy/qa40xw/releases) the code from this repository and open [analyze.html](analyze.html) in the browser.
 
 

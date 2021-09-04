@@ -103,7 +103,7 @@ function setGenerator2() {
 
 function setWindowType() {
     const windowTypeChoice = document.querySelector('#windowTypeSelect option:checked').value;
-    // TODO makeRequest("PUT", "/Settings/Window/" + windowTypeChoice, updateSetWindowType.bind(null, windowTypeChoice));
+    makeRequest("PUT", "/Settings/Windowing/" + windowTypeChoice, updateSetWindowType.bind(null, windowTypeChoice));
 }
 
 function updateSetWindowType(windowTypeChoice) {
