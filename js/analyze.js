@@ -126,7 +126,7 @@ function updateSetWindowType(windowTypeChoice) {
 
 function setSampleRate() {
     const sampleRate = document.querySelector('input[name="sampleRateChoice"]:checked');
-    // TODO makeRequest("PUT", "/Settings/SampleRate/" + sampleRate.value, updateSetSampleRate.bind(null, sampleRate.dataset.label));
+    makeRequest("PUT", "/Settings/SampleRate/" + sampleRate.value, updateSetSampleRate.bind(null, sampleRate.dataset.label));
 }
 
 function updateSetSampleRate(sampleRate) {
