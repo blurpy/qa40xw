@@ -488,7 +488,7 @@ function makeRequest(method, path, callback) {
                 }
             } else {
                 run = false;
-                alert('There was a problem with the request.');
+                alert('There was a problem with the request.\n\n' + httpRequest.statusText);
             }
         }
     };
