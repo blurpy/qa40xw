@@ -52,6 +52,7 @@ function clickSetSettings() {
     setLoad();
     setGenerator1();
     setGenerator2();
+    setSineGenerators();
     setWindowType();
     setSampleRate();
     setMeasureFrequencyStop();
@@ -113,6 +114,10 @@ function setGenerator2() {
     const frequency =  document.getElementById("audioGen2Frequency").value;
     const amplitude =  document.getElementById("audioGen2Amplitude").value;
     makeRequest("PUT", "/Settings/AudioGen/Gen2/" + enabled + "/" + frequency + "/" + amplitude, updateGenerator2Output);
+}
+
+function setSineGenerators() {
+    makeRequest("PUT", "/Settings/OutputSource/Sine", function() {});
 }
 
 function setWindowType() {

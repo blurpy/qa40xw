@@ -59,6 +59,7 @@ function clickSetSettings() {
     setLoad();
     setGenerator1();
     setGenerator2();
+    setSineGenerators();
     setWindowType();
     setSampleRate();
     setRoundFrequencies();
@@ -99,6 +100,10 @@ function setGenerator1() {
 
 function setGenerator2() {
     makeRequest("PUT", "/Settings/AudioGen/Gen2/Off/4500/-40", function() {});
+}
+
+function setSineGenerators() {
+    makeRequest("PUT", "/Settings/OutputSource/Sine", function() {});
 }
 
 function setWindowType() {
