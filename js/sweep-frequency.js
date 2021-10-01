@@ -9,8 +9,6 @@ let steps = [];
 let stepPosition = 0;
 let currentFrequency = 0;
 let currentAmplitude = 0;
-let sweepFrequencyStart = 0;
-let sweepFrequencyStop = 0;
 
 let gainLeftArray = [];
 let gainRightArray = [];
@@ -222,8 +220,8 @@ function clickRun() {
     }
 
     stepPosition = 0;
-    sweepFrequencyStart = Number(document.getElementById("sweepFrequencyStart").value);
-    sweepFrequencyStop = Number(document.getElementById("sweepFrequencyStop").value);
+    const sweepFrequencyStart = Number(document.getElementById("sweepFrequencyStart").value);
+    const sweepFrequencyStop = Number(document.getElementById("sweepFrequencyStop").value);
     steps = generateSteps(sweepFrequencyStart, sweepFrequencyStop);
     currentFrequency = steps[stepPosition];
 
