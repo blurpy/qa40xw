@@ -1,6 +1,7 @@
 const basePath = "http://localhost:9402";
+
 const measureFrequencyStart = 20;
-const measureFrequencyStop = 20000;
+let measureFrequencyStop = 20000;
 
 let run = false;
 let currentRequests = 0;
@@ -62,6 +63,7 @@ function clickSetSettings() {
     setSineGenerators();
     setWindowType();
     setSampleRate();
+    setMeasureFrequencyStop();
     setRoundFrequencies();
 }
 
@@ -123,6 +125,11 @@ function setSampleRate() {
 
 function updateSetSampleRate(sampleRate) {
     document.getElementById("setSampleRate").innerText = sampleRate;
+}
+
+function setMeasureFrequencyStop() {
+    measureFrequencyStop = Number(document.getElementById("measureFrequencyStop").value);
+    document.getElementById("setMeasureFrequencyStop").innerText = measureFrequencyStop;
 }
 
 function setRoundFrequencies() {
@@ -447,10 +454,10 @@ function refreshPhaseDegrees(httpRequest) {
 }
 
 function refreshAcquisition() {
-    makeRequest("GET", "/ThdDb/" + currentFrequency + "/" + (measureFrequencyStop + 10), refreshThd);
-    makeRequest("GET", "/ThdnDb/" + currentFrequency + "/" + measureFrequencyStart + "/" + (measureFrequencyStop + 10), refreshThdN);
+    makeRequest("GET", "/ThdDb/" + currentFrequency + "/" + measureFrequencyStop, refreshThd);
+    makeRequest("GET", "/ThdnDb/" + currentFrequency + "/" + measureFrequencyStart + "/" + measureFrequencyStop, refreshThdN);
     makeRequest("GET", "/SnrDb/" + currentFrequency + "/" + measureFrequencyStart + "/" + measureFrequencyStop, refreshSnr);
-    makeRequest("GET", "/RmsDbv/" + measureFrequencyStart + "/" + (measureFrequencyStop + 10), refreshRms);
+    makeRequest("GET", "/RmsDbv/" + measureFrequencyStart + "/" + measureFrequencyStop, refreshRms);
     // TODO makeRequest("GET", "/Phase/Degrees", refreshPhaseDegrees);
     updateGenerator1Output();
 }
