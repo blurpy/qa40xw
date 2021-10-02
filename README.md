@@ -1,6 +1,6 @@
 # QA40x Web
 
-Unofficial web interface for the [QA402 Audio Analyzer](https://quantasylum.com/collections/frontpage/products/qa402-audio-analyzer) using the REST API of the [QA40x Analyzer](https://github.com/QuantAsylum/QA402).
+Unofficial web interface for the [QA402 Audio Analyzer](https://quantasylum.com/products/qa402-audio-analyzer) using the REST API of the [QA40x Analyzer](https://github.com/QuantAsylum/QA402).
 
 See [QA401 Web](https://github.com/blurpy/qa401w) for a version for the QA401. QA40x Analyzer and QA40x Web will eventually include support the QA401.
 
