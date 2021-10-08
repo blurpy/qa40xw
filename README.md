@@ -7,7 +7,7 @@ See [QA401 Web](https://github.com/blurpy/qa401w) for a version for the QA401. Q
 
 ## Features
 
-Please read the manual for the Analyzer software to understand how to use the QA402. This app offers a lot of the functionality of the Windows software, but is not feature complete.
+Please read the manual for the QA40x Analyzer software to understand how to use the QA402. This webapp offers a lot of the functionality of the official software, but is not feature complete.
 
 **Note:** QA40x does not expose all the APIs that QA401H offers yet, so some features are disabled in the user interface for now.  
 
@@ -69,7 +69,6 @@ Tip: hide the menu when taking screenshots and then use the keyboard shortcuts.
 
 1. [Download](https://github.com/QuantAsylum/QA402/releases) and start QA40x v0.999 or newer.
 2. [Download](https://github.com/blurpy/qa40xw/releases) the code from this repository and open [analyze.html](analyze.html) in the browser.
-    * **Note**: releases are not available yet, so download the latest [development version](https://github.com/blurpy/qa40xw/archive/refs/heads/main.zip) for now.
 
 
 ### Notes
