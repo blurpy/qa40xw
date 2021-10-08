@@ -16,7 +16,7 @@ Please read the manual for the Analyzer software to understand how to use the QA
 
 Analyze acquisitions over a frequency range from 20Hz to a specified stop frequency, using static settings.
 
-![Screenshot of frequency analysis](img/qa401w-analyze-frequency.png)
+![Screenshot of frequency analysis](img/qa40xw-analyze-frequency.png)
 
 * Use single or continuous acquisition.
 * Choose to see only left channel, right channel, or both channels.
@@ -26,14 +26,14 @@ Analyze acquisitions over a frequency range from 20Hz to a specified stop freque
 * When specifying an external gain, the real input voltage will be shown in addition to the calculated voltage.
 * View up to 0.3 seconds of the recorded waveform as a time series graph. Remember to enable fetching of time data.
  
-![Screenshot of time series analysis](img/qa401w-analyze-time.png)
+![Screenshot of time series analysis](img/qa40xw-analyze-time.png)
 
 
 ### Frequency sweep mode
 
 Run frequency sweeps and record data at predefined steps along the way.
 
-![Screenshot of frequency sweep mode](img/qa401w-sweep-frequency.png)
+![Screenshot of frequency sweep mode](img/qa40xw-sweep-frequency.png)
 
 * Choose one graph to follow in real time while sweep runs.
 * Switch between the different graphs after sweep is finished to view recorded results.
@@ -44,7 +44,7 @@ Run frequency sweeps and record data at predefined steps along the way.
 
 Run amplitude sweeps and record data at defined steps along the way.
 
-![Screenshot of amplitude sweep mode](img/qa401w-sweep-amplitude.png)
+![Screenshot of amplitude sweep mode](img/qa40xw-sweep-amplitude.png)
 
 * Choose one graph to follow in real time while sweep runs.
 * Switch between the different graphs after sweep is finished to view recorded results.
