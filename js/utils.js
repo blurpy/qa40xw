@@ -32,6 +32,16 @@ function selectNextRadioButton(radioButtons) {
     }
 }
 
+function getAverageValueFromList(list) {
+    let sum = 0.0;
+
+    for (let i = 0; i < list.length; i++) {
+        sum += Number(list[i]);
+    }
+
+    return sum / list.length;
+}
+
 function getNextRadioButton(radioButtons, index) {
     const nextRadioIndex = (index + 1) % radioButtons.length;
     const nextRadioButton = radioButtons[nextRadioIndex];
